@@ -130,3 +130,4 @@ dmypy.json
 
 # medi files
 mediafiles/
+pypro/base/static/
