@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="{% static '/favicon.ico' %}">
+	<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 	
 	<title>Calc Pontos</title>
 
@@ -22,114 +22,105 @@
   </head>
   <body>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12 ">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">Navbar</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="{% url 'base:home' %}">Calc Pontos</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 			  
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				  <ul class="navbar-nav mr-auto">
-				  </ul>
-				</div>
-			</nav>	
-			<div class="jumbotron">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			</ul>
+		</div>
+	</nav>	
+	<div class="carousel slide" id="carousel-545599">
+	<ol class="carousel-indicators">
+		<li data-slide-to="0" data-target="#carousel-545599">
+		</li>
+		<li data-slide-to="1" data-target="#carousel-545599">
+		</li>
+		<li data-slide-to="2" data-target="#carousel-545599" class="active">
+		</li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item">
+			<img class="d-block w-100" alt="Esportes" src="{% static 'img/esporte.jpg' %}">
+			<div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */">
+				<h3>
+					Exercite-se
+				</h3>
+				<p>
+					O Exercício é bom para manter o corpo funcionando corretamente, regulando os hormônios, causa
+					sensação de saciedade por mais tempo.
+				</p>
+				<p>
+					Além disso, com o passar do tempo, sentimos o corpo tomando uma forma mais saudável. Isso eleva a
+					autoestima que contribui para continuarmos seguindo o objetivo de ficarmos em forma.
+				</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" alt="Carousel Bootstrap Second" src="{% static 'img/Dieta.jpg' %}">
+			<div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */">
+				<h4>
+					Alimentação saudável
+				</h4>
+				<p>
+					Manter uma dieta balanceada, aliada aos exercícios físicos e um belo descanso, mantem o corpo saudável
+					dentro do peso ideal. 
+				</p>
+				<p>
+					A dieta é primordial para manter o peso dentro do considerado saudável. Sem ela, mesmo com muito exercício,
+					será difícil manter a forma por um tempo prolongado.
+				</p>
+			</div>
+		</div>
+		<div class="carousel-item active">
+			<img class="d-block w-100" alt="Carousel Bootstrap Third" src="{% static 'img/meditacao.jpg' %}">
+			<div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */">
+				<h4>
+					Mens sana in corpore sano
+				</h4>
+				<p>
+					Conhecer-te a ti mesmo e ter o controle do pensamento, manter o foco e viver um dia de cada vez, é, 
+					sem dúvida, o que faz diferença para manter uma vida saudável e atingir os objetivos.
+				</p>
+			</div>
+		</div>
+		</div> 
+			<a class="carousel-control-prev" href="#carousel-545599" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-545599" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
 				<h2>
-					Bem-vindo(a)
+					Heading
 				</h2>
 				<p>
-					Utilize essa ferramenta para calcular os pontos de sua dieta dos vigilantes do peso.
+					Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 				</p>
 				<p>
-					Clique no botão abaixo para fazer login e utilizar a calculadora.
+					<a class="btn" href="#">View details »</a>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<h2>
+					Heading
+				</h2>
+				<p>
+					Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 				</p>
 				<p>
-					<a class="btn btn-primary btn-large" href="#">Login</a>
+					<a class="btn" href="#">View details »</a>
 				</p>
 			</div>
-			<div class="carousel slide" id="carousel-545599">
-				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-545599">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-545599">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-545599" class="active">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap First" src="https://www.layoutit.com/img/sports-q-c-1600-500-1.jpg">
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.layoutit.com/img/sports-q-c-1600-500-2.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item active">
-						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="https://www.layoutit.com/img/sports-q-c-1600-500-3.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-				</div> <a class="carousel-control-prev" href="#carousel-545599" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-545599" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h2>
-						Heading
-					</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
-					</p>
-				</div>
-				<div class="col-md-6">
-					<h2>
-						Heading
-					</h2>
-					<p>
-						Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					</p>
-					<p>
-						<a class="btn" href="#">View details »</a>
-					</p>
-				</div>
-			</div>
-			<blockquote class="blockquote text-right">
-				<p class="mb-0">
-					Apenas nos livraremos de nossos fantasmas, quando obtivermos controle total sobre nossa mente.
-				</p>
-				<footer class="blockquote-footer">
-					Luiz Arthur Carvalho
-				</footer>
-			</blockquote>
 		</div>
-	</div>
-</div>
-
+		<blockquote class="blockquote text-right">
+			<p class="mb-0">
+				Apenas nos livraremos de nossos fantasmas, quando obtivermos controle total sobre nossa mente.
+			</p>
+			<footer class="blockquote-footer">
+				Luiz Arthur Carvalho
+			</footer>
+		</blockquote>
   </body>
 </html>
