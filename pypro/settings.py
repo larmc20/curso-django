@@ -28,7 +28,7 @@ SECRET_KEY = 'sk7k7h)7mn4v*_99g95&pz!0tz0^laq58#h$)9gl(r&f6bs9a0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'ultimatec.com.br',]
+ALLOWED_HOSTS = ['127.0.0.1', 'ultimatec.com.br','www.ultimatec.com.br']
 
 AUTH_USER_MODEL = 'base.User'
 
